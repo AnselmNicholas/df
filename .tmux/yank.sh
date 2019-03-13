@@ -18,8 +18,8 @@ copy_use_osc52_fallback=$(tmux show-option -gvq "@copy_use_osc52_fallback")
 copy_backend=""
 if is_app_installed putclip; then
   copy_backend="putclip"
-elif is_app_installed clip; then
-  copy_backend="clip"
+elif is_app_installed clip.exe; then
+  copy_backend="clip.exe"
 elif is_app_installed pbcopy; then
   copy_backend="pbcopy"
 elif is_app_installed reattach-to-user-namespace; then
